@@ -2,11 +2,11 @@ package com.vullpes.diaryapp.di
 
 import android.content.Context
 import androidx.room.Room
-import com.vullpes.diaryapp.conectivity.NetworkConectivityObserver
-import com.vullpes.diaryapp.data.database.ImageToDeleteDao
-import com.vullpes.diaryapp.data.database.ImagesDataBase
-import com.vullpes.diaryapp.data.database.ImagesToUploadDao
-import com.vullpes.diaryapp.util.Constants.IMAGES_DATABASE
+import com.vullpes.mongo.database.ImageToDeleteDao
+import com.vullpes.mongo.database.ImagesDataBase
+import com.vullpes.mongo.database.ImagesToUploadDao
+import com.vullpes.util.Constants.IMAGES_DATABASE
+import com.vullpes.util.conectivity.NetworkConectivityObserver
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,7 +22,7 @@ class DatabaseModule {
     @Singleton
     fun provideDatabase(
         @ApplicationContext context: Context
-    ): ImagesDataBase{
+    ): ImagesDataBase {
         return Room.databaseBuilder(
             context = context,
             klass = ImagesDataBase::class.java,
