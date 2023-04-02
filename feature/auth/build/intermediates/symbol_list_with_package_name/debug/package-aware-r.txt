@@ -1,0 +1,4 @@
+com.vullpes.auth
+string app_name
+string auth_subtitle
+string auth_title

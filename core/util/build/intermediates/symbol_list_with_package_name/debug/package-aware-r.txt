@@ -1,0 +1,17 @@
+com.vullpes.util
+drawable angry
+drawable awful
+drawable bored
+drawable calm
+drawable depressed
+drawable disappointed
+drawable happy
+drawable humorous
+drawable logo
+drawable mysterious
+drawable neutral
+drawable romantic
+drawable shameful
+drawable surprised
+drawable suspicious
+drawable tense

@@ -1,0 +1,2 @@
+com.vullpes.ui
+drawable google_logo
